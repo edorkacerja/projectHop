@@ -1,0 +1,232 @@
+html, body {
+	margin:0px;
+	padding:0px;
+	height: 100%;
+}
+
+body * {
+	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+}
+
+.container {
+	width:1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/*HEADER*/
+
+.header{
+	height: 131px;
+}
+
+.header #logo{
+	width:200px;
+	margin-top: 10px;
+	padding:3px;
+}
+
+.header #logoAirFrance{
+	clear:both;
+	height:15px;
+	margin:0px;
+}
+
+.header .dropdown{
+	
+}
+
+.header ul {
+	clear:both;
+	list-style-type: none;
+}
+
+.header  a{
+	text-transform: uppercase;
+	color:black;
+	padding: 10px;
+
+}
+
+.header  #firstTab{
+	padding-left: 0px;
+	margin-left: 0px;
+}
+
+.header li{
+	float: left;
+	text-decoration: none;
+}
+
+.header a:hover{
+	font-weight: bold;
+	border-bottom: 3px solid red;
+	background-color: white;
+	text-decoration: none;
+}
+
+.header li #search{
+
+}
+
+.header form{
+	clear:both;
+	position: static;
+}
+
+/*MAIN*/
+
+.main{
+	background-color: red;
+	height: 50px;
+	position: relative;
+	z-index: 999;
+}
+
+.tabs{
+}
+
+.main .row{
+
+}
+
+.main .row img{
+	width: 35px;
+	margin:0px 10px;
+}
+
+.main .row h3{
+	
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.main .col-md-4{
+	background-color: red;
+
+}
+
+.main .row input[type="text"]{
+	margin: 0 3%;
+}
+
+.main .row input[type="text"][name="wide"]{
+	width: 94%;
+}
+
+.main .row input[type="text"][name="departing"]{
+	width: 43%;
+}
+
+.main .row input[type="text"][name="person"]{
+	width: 30%;
+}
+
+.main .row input[type="text"][name="adult"]{
+
+	width: 56%;
+}
+
+.main .row select{
+	widows: 100%;
+}
+.bottom{
+	margin-bottom: 40px;
+}
+
+.bottom1 {
+	margin-bottom: 40px;
+}
+
+.main .active .theBlock1{
+	display: block;
+
+}
+
+.main .theBlock1 {
+	display: none;
+}
+
+
+
+/*ASDF*/
+
+.asdf{
+	
+	height: 325px;
+	background-size: 1366px;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	
+
+}
+
+/*INCLUDED*/
+
+.includedInPrice{
+	height: 170px;
+	background-color: #F0F0F0;
+}
+
+/*SERVICES*/
+.services{
+	height: 550px;
+}
+
+.services h1{
+	text-align: center;
+	font-size: 25px;	
+	font-weight: bold;
+}
+
+.services p{
+	height:70px;
+}
+
+.services .row{
+
+}
+
+.services .col-md-3{
+	border-left:1px solid black;
+	height: 400px;
+}
+#first{
+	border-left: 0px solid black;
+}
+
+.services img{
+	width:100%;
+	max-height: 180px;
+}
+
+
+/*FOOTER*/
+.footer{
+	background-color: #F0F0F0;
+	height: 460px;
+}
+
+
+.carousel{
+	position: absolute;
+}
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 1366px;
+      margin: auto;
+
+  }
+
+
+
+
+

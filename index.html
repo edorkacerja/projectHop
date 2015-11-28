@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hop Airline- flights in France and Europe</title>
+  <meta name="description" content="Airplane Flights">
+  <meta name="author" content="Edor Kacerja">
+	
+	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css"/>
+  	<link rel="stylesheet" href="css/main.css"/>
+	<script language="javascript" type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<img id="logo" class="pull-left" src="pictures/logo.png" alt="hops logo"/>
+			<div class="dropdown pull-right">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			    English
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+			    <li><a href="#">Italiano</a></li>
+			    <li><a href="#">French</a></li>
+			  </ul>
+			</div>
+			
+			
+			<img id="logoAirFrance" class="pull-right" src="pictures/logoAirFrance.png" alt="airfrance"/>
+
+			<ul>
+				<li id="firstTab"><a href="index.html">plan and book</a></li>
+				<li><a href="ourServices.html">our services</a></li>
+				<li><a href="ourProgrammes.html">our loyalty programmes</a></li>
+				<li><a href="ourCommitments.html">our commitments</a></li>
+			
+			<li id="search" class="pull-right"><form>
+				<input type="text">
+			</form></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container">
+			<div class="tabs">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4 active button1">
+						 <h3> <img src="pictures/icon/plane2.png"> book a flight</h3>
+						<div class="theBlock1">
+							<p>
+								<form action="">
+								<input type="radio" name="sex" >Roundtrip   
+								<input type="radio" name="sex" >One-way
+								</form>
+							</p>
+							<p><input type="text" name="wide" placeholder="From"></p>
+							<p><input type="text" name="wide" placeholder="To"></p>
+							<p><input type="text" name="departing" placeholder="Departing"> <input type="text" name="departing" placeholder="Returning"></p>
+							<p><input type="text" name="person" placeholder="1 Person"> <input type="text" name="adult" placeholder="Adult 25-64"></p>
+							<p class="bottom">Schedule Only <button class="blueButton pull-right">Hop!</button></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 button2">
+						<h3> <img src="pictures/icon/folder.png">my booking & baggage</h3>
+						<div class="theBlock1">
+							<p>
+								Take advantage of our online services to manage your booking :
+								- Add a baggage
+								- Change your account details
+								- Check your current reservations
+							</p>
+							<p><input type="text" name="wide" placeholder="Lastname"></p>
+							<p><input type="text" name="wide" placeholder="Booking Reference"></p>
+							<p class="bottom1">ex: A1RB2C<button class="blueButton pull-right">AND HOP</button></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4 button3">
+						<h3> <img src="pictures/icon/check.png">online check-in</h3>
+						<div class="theBlock1">
+							<p>
+								30 hours prior to departure :
+								- Get your boarding pass
+								- Choose your seat
+							</p>
+							<p><input type="text" name="wide" placeholder="Lastname"></p>
+							<p>Form of identification</p>
+							<p>
+								<select name="cars">
+								  <option value="volvo">Volvo</option>
+								  <option value="saab">Saab</option>
+								  <option value="fiat">Fiat</option>
+								  <option value="audi">Audi</option>
+								</select>
+							</p>
+							<p><input type="text"> <input type="text"></p>
+							<h1>jaolsdfijasdfsda</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="asdf">
+		<div>
+			<div class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			      <li data-target="#myCarousel" data-slide-to="3"></li>
+			    </ol>
+
+
+				<div class="carousel-inner" role="listbox">
+			      <div class="item active">
+			        <img src="pictures/hopNantes.jpg" alt="Nantes" width="360" height="245">
+			      </div>
+
+			      <div class="item">
+			        <img src="pictures/hopBordeaux.jpg" alt="Bordeaux" width="460" height="245">
+			      </div>
+			    
+			      <div class="item">
+			        <img src="pictures/hopParis.jpg" alt="Paris" width="460" height="245">
+			      </div>
+
+			      <div class="item">
+			        <img src="pictures/hopLyon.jpg" alt="Lyon" width="460" height="245">
+			      </div>
+			    </div>
+
+
+			     
+			</div>
+		</div>
+	</div>
+	
+	<div class="included">
+		<div class="container">
+			<div class="includedInPrice">
+				<h1>Always included, regardless of your fare class</h1>
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4">Snack</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">Hand Luggage</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">Choice of seat</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="services">
+		<div class="container">
+			<h1>Our selection of services</h1>
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-3" id="first"> <h1>car rental</h1>
+					<p>5 lsdjf asdfl asdf nkjasdf saefl nasjkdf lisef nkjsdf lij </p>
+					<img src="pictures/car.jpg" alt="car">
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"><h1>819 000 hotels</h1> <p>Book asldif asdlf nkjsdf asldfi sdnfj sdf</p>
+				<img src="pictures/window.jpg" alt="window"></div>
+				<div class="col-md-3 col-sm-3 col-xs-3"> <h1>airport parking</h1> <p>lisjdfil asldif asndfl isndf njkasdf insdf linsdf njksdf njkasdf insedf asdf njksdf nkjsdf njksdf </p><img src="pictures/plane.jpg" alt="plane"></div>
+				<div class="col-md-3 col-sm-3 col-xs-3"><h1>low-priced driver</h1> <p>lasdf nsadf lijnsdf sdf n jksdf sd fkjnjksd fsdf jnknjksd njk d fkjsn d kjsds j jksdf jksdf njksdf nkjsd </p><img src="pictures/couple.jpg" alt="couple"></div>
+			</div>
+		</div>
+	</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-4"> NEWSLETTER</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">FOLLOW US</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">BOOKING</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">INTERNET ASSISTANCE</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-2">Agen flights</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">La Rochelle flights</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">Paris</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">Amsterdam</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">About us</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">Conditions of carriage</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+
+
+
+  <script src="js/code.js"></script>
+
+</body>
+</html>
