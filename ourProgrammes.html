@@ -32,10 +32,10 @@
 			<img id="logoAirFrance" class="pull-right" src="pictures/logoAirFrance.png" alt="airfrance"/>
 
 			<ul>
-				<li id="firstTab"><a href="index.html">plan and book</a></li>
-				<li><a href="ourServices.html">our services</a></li>
-				<li><a href="ourProgrammes.html">our loyalty programmes</a></li>
-				<li><a href="ourCommitments.html">our commitments</a></li>
+				<li class="tab1"><a href="index.html">plan and book</a></li>
+				<li class="tab2"><a href="ourServices.html" >our services</a></li>
+				<li class="tab3 activeTab"><a href="ourProgrammes.html" >our loyalty programmes</a></li>
+				<li class="tab4"><a href="ourCommitments.html" >our commitments</a></li>
 			
 			<li id="search" class="pull-right"><form>
 				<input type="text">
@@ -49,33 +49,57 @@
 		<div class="container">
 			<div class="tabs">
 				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4 active button1">
-						 <h3>book a flight</h3>
+					<div class="col-md-4 col-sm-4 col-xs-4 button1">
+						 <h3> <img src="pictures/icon/plane2.png"> book a flight</h3>
 						<div class="theBlock1">
-							<p>roundtrip ----- one-way</p>
-							<p><input type="text"></p>
-							<p><input type="text"></p>
-							<p><input type="text"> <input type="text"></p>
-
+							<p>
+								<form action="">
+									<div class="row">
+										<div class="col-md-5 col-sm-5 col-xs-5"><input type="radio" name="sex" >Roundtrip  </div> 
+										<div class="col-md-6 col-sm-6 col-xs-6"><input type="radio" name="sex" >One-way</div>
+									</div>
+								</form>
+							</p>
+							<p><input type="text" name="wide" placeholder="From"></p>
+							<p><input type="text" name="wide" placeholder="To"></p>
+							<p><input type="text" name="departing" placeholder="Departing"> <input type="text" name="departing" placeholder="Returning"></p>
+							<p><input type="text" name="person" placeholder="1 Person"> <input type="text" name="adult" placeholder="Adult 25-64"></p>
+							<p class="bottom">Schedule Only <button class="blueButton pull-right">HOP!</button></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-4 button2">
-						<h3>my booking & baggage</h3>
+						<h3> <img src="pictures/icon/folder.png">my booking & baggage</h3>
 						<div class="theBlock1">
-							<p>roundtrip ----- one-way</p>
-							<p><input type="text"></p>
-							<p><input type="text"></p>
-							<p><input type="text"> <input type="text"></p>
+							<p>
+								Take advantage of our online services to manage your booking :
+								- Add a baggage
+								- Change your account details
+								- Check your current reservations
+							</p>
+							<p><input type="text" name="wide" placeholder="Lastname"></p>
+							<p><input type="text" name="wide" placeholder="Booking Reference"></p>
+							<p class="bottom1">ex: A1RB2C<button class="blueButton pull-right">AND HOP</button></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-4 button3">
-						<h3>online check-in</h3>
+						<h3> <img src="pictures/icon/check.png">online check-in</h3>
 						<div class="theBlock1">
-							<p>roundtrip ----- one-way</p>
-							<p><input type="text"></p>
-							<p><input type="text"></p>
-							<p><input type="text"> <input type="text"></p>
-							<h1>jaolsdfijasdfsda</h1>
+							<p>
+								30 hours prior to departure :
+								- Get your boarding pass
+								- Choose your seat
+							</p>
+							<p><input type="text" name="wide" placeholder="Lastname"></p>
+							<p>Form of identification</p>
+							<p>
+								<select name="cars" width="100%">
+								  <option value="booking">Booking reference</option>
+								  <option value="electronic">Electronic ticket</option>
+								  <option value="flyer">Frequent Flyer Number</option>
+								</select>
+							</p>
+							<p><input type="text" name="wide" placeholder="ex:A1RB2C"> </p>
+							<p class="bottom">. <button class="blueButton pull-right">AND HOP</button></p>
 						</div>
 					</div>
 				</div>
@@ -86,46 +110,130 @@
 	<div class="fare">
 		<div class="container">
 			<h1>OUR FARE RANGE</h1>
-			<table border="1px">
+			<table>
 				<tr>
-					<td></td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
+					<td id="first"></td>
+					<td id="promo" class="headTable">PROMO</td>
+					<td id="basic" class="headTable">BASIC</td>
+					<td id="basic2" class="headTable">BASIC+</td>
+					<td id="smart" class="headTable">SMART</td>
+					<td id="flex" class="headTable">FLEX</td>
+					<td id="youth" class="headTable">YOUTH</td>
 				</tr>
 				<tr>
-					<td colspan="7">asdf</td>
+					<td class="conditions" colspan="7">FARE CONDITIONS</td>
 					
 				</tr>
 				<tr>
-					<td>asdf</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
+					<td class="greyBox">Change your flight before using the outbound portion of your ticket. </td>
+					<td><img src=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
 				</tr>
 				<tr>
-					<td>asdf</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
+					<td class="greyBox">Change your ticket after departure of the outbound flight time. </td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
 				</tr>
 				<tr>
-					<td>asdf</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
-					<td>asdf</td>
-					<td>sdf</td>
-					<td>fdsa</td>
+					<td class="greyBox">Refund before and after departure of the outbound flight time.	</td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€20</h3></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td id="first"></td>
+					<td id="promo" class="headTable">PROMO</td>
+					<td id="basic" class="headTable">BASIC</td>
+					<td id="basic2" class="headTable">BASIC+</td>
+					<td id="smart" class="headTable">SMART</td>
+					<td id="flex" class="headTable">FLEX</td>
+					<td id="youth" class="headTable">YOUTH</td>
+				</tr>
+				<tr>
+					<td class="conditions" colspan="7">FARE CONDITIONS</td>
+					
+				</tr>
+				<tr>
+					<td class="greyBox">Change your flight before using the outbound portion of your ticket. </td>
+					<td><img src=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
+				</tr>
+				<tr>
+					<td class="greyBox">Change your ticket after departure of the outbound flight time. </td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
+				</tr>
+				<tr>
+					<td class="greyBox">Refund before and after departure of the outbound flight time.	</td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€20</h3></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td id="first"></td>
+					<td id="promo" class="headTable">PROMO</td>
+					<td id="basic" class="headTable">BASIC</td>
+					<td id="basic2" class="headTable">BASIC+</td>
+					<td id="smart" class="headTable">SMART</td>
+					<td id="flex" class="headTable">FLEX</td>
+					<td id="youth" class="headTable">YOUTH</td>
+				</tr>
+				<tr>
+					<td class="conditions" colspan="7">FARE CONDITIONS</td>
+					
+				</tr>
+				<tr>
+					<td class="greyBox">Change your flight before using the outbound portion of your ticket. </td>
+					<td><img src=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
+				</tr>
+				<tr>
+					<td class="greyBox">Change your ticket after departure of the outbound flight time. </td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h1>€70</h1></td>
+					<td><h2>€50</h2></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€10</h3></td>
+				</tr>
+				<tr>
+					<td class="greyBox">Refund before and after departure of the outbound flight time.	</td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><img src="" alt=""></td>
+					<td><h3>€20</h3></td>
 				</tr>
 			</table>
 		</div>
@@ -137,26 +245,116 @@
 	
 
 
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4"> NEWSLETTER</div>
-					<div class="col-md-4 col-sm-4 col-xs-4">FOLLOW US</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">BOOKING</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">INTERNET ASSISTANCE</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<h2>NEWSLETTER</h2>
+					<input type="text" placeHolder="Email">
 				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<h2>FOLLOW US</h2>
+					<p> <img src="pictures/icon/facebook.png" alt="">
+						<img src="pictures/icon/twitter.png" alt="">
+						<img src="pictures/icon/youtube.png" alt="">
+					</p>
 
-				<div class="row">
-					<div class="col-md-2 col-sm-2 col-xs-2">Agen flights</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">La Rochelle flights</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Paris</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Amsterdam</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">About us</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Conditions of carriage</div>
 				</div>
-				
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<h2 class="skyColor">BOOKING</h2>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<h2 class="skyColor">INTERNET ASSISTANCE</h2>
+				</div>
 			</div>
+
+			<div class="row" id="destinations">
+				<div class="col-md-6 col-sm-6 col-xs-6"> <h2 class="greyColor"> FRANCE DESTINATIONS</h2></div>
+				<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> EUROPE DESTINATIONS</h2></div>
+				<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> HOP MOBILE THE COMPANY</h2></div>
+				<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> LEGAL</h2></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>Agen flights</p>
+					<p>Ajaccio flights</p>
+					<p>Aurillac flights</p>
+					<p>Bastia flights</p>
+					<p>Biarritz flights</p>
+					<p>Bordeaux flights</p>
+					<p>Brest flights</p>
+					<p>Brive flights</p>
+					<p>Caen flights</p>
+					<p>Calvi flights</p>
+					<p>Castres flights</p>
+					<p>Clermont Fd flights</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>La Rochelle flights</p>
+					<p>Lannion flights</p>
+					<p>Lille flights</p>
+					<p>Lorient flights</p>
+					<p>Lourdes-Tarbes flights</p>
+					<p>Lyon flights</p>
+					<p>Marseille flights</p>
+					<p>Metz-Nancy flights</p>
+					<p>Montpellier flights</p>
+					<p>Mulhouse-Basel flights</p>
+					<p>Nantes flights</p>
+					<p>Nice flights</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>Paris flights</p>
+					<p>Pau flights</p>
+					<p>Perpignan flights</p>
+					<p>Poitiers flights</p>
+					<p>Quimper flights</p>
+					<p>Rennes flights</p>
+					<p>Rodez flights</p>
+					<p>Strasbourg flights</p>
+					<p>Toulouse flights</p>
+					<p>Toulon flights</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>Amsterdam flights</p>
+					<p>Bologna flights</p>
+					<p>Brussels flights</p>
+					<p>Düsseldorf flights</p>
+					<p>Florence flights</p>
+					<p>Geneva flights</p>
+					<p>Gothenburg flights</p>
+					<p>Luxembourg flights</p>
+					<p>Milan flights</p>
+					<p>Prague flights</p>
+					<p>Rome flights</p>
+					<p>Venice flights</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>About us</p>
+					<p>Corporate Governance</p>
+					<p>Fleet</p>
+					<p>Flight safety</p>
+					<p>Maintenance</p>
+					<p>Press</p>
+					<p>Training</p>
+					<h2 class="greyColor">CONTACT</h2>
+					<p>Contact</p>
+					<p>FAQ</p>
+					<p>Join us</p>
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2 flights">
+					<p>Conditions of carriage</p>
+					<p>General Conditions of Sales</p>
+					<p>Managing Cookies</p>
+					<p>European notice</p>
+					<p>Legal notice</p>
+					<p>Credits</p>
+				</div>
+			</div>
+			
 		</div>
+	</div>
 
 
 

@@ -5,9 +5,9 @@ html, body {
 }
 
 body * {
-	font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	font-family: excellenceinmotion, Arial, sans-serif;
 	font-size: 14px;
-	color: #333;
+	color:#051039;
 	line-height: 22px;
 }
 
@@ -50,12 +50,6 @@ body * {
 	text-transform: uppercase;
 	color:black;
 	padding: 10px;
-
-}
-
-.header  #firstTab{
-	padding-left: 0px;
-	margin-left: 0px;
 }
 
 .header li{
@@ -63,7 +57,7 @@ body * {
 	text-decoration: none;
 }
 
-.header a:hover{
+.header a:hover, .header .activeTab a{
 	font-weight: bold;
 	border-bottom: 3px solid red;
 	background-color: white;
@@ -82,17 +76,21 @@ body * {
 /*MAIN*/
 
 .main{
-	background-color: red;
-	height: 50px;
+	background-color: #C40000;
+	height: 65px;
 	position: relative;
-	z-index: 999;
+	z-index: 9;
+}
+
+.main p, form{
+	color: white;
 }
 
 .tabs{
 }
 
-.main .row{
-
+.main .row .row .col-md-5,.main .row .row .col-md-6 {
+	color: white;
 }
 
 .main .row img{
@@ -108,12 +106,17 @@ body * {
 }
 
 .main .col-md-4{
-	background-color: red;
+	background-color: #C40000;
+
+}
+
+.main .row p{
+		margin-left:  3%;
+		margin-right: 3%;
 
 }
 
 .main .row input[type="text"]{
-	margin: 0 3%;
 }
 
 .main .row input[type="text"][name="wide"]{
@@ -122,10 +125,12 @@ body * {
 
 .main .row input[type="text"][name="departing"]{
 	width: 43%;
+	margin-right: 6%
 }
 
 .main .row input[type="text"][name="person"]{
 	width: 30%;
+	margin-right: 6%;
 }
 
 .main .row input[type="text"][name="adult"]{
@@ -153,6 +158,12 @@ body * {
 	display: none;
 }
 
+.blueButton{
+	background-color: #051039;
+	border:none;
+	padding: 5px 20px;
+	color: white;
+}
 
 
 /*ASDF*/
@@ -169,32 +180,87 @@ body * {
 
 /*INCLUDED*/
 
-.includedInPrice{
+.included{
+	margin-top: 0px;
 	height: 170px;
+
+}
+
+.includedInPrice{
 	background-color: #F0F0F0;
+	text-align: center;
+	padding-right: 120px;
+	padding-left: 120px;
+	padding-bottom: 40px;
+}
+
+.includedInPrice h1{
+	font-weight: bolder;
+	font-size: 26px;
+	margin-top: 0px;
+	padding: 40px;
+	color:#051039;
+
+}
+
+.includedInPrice .row{
+	text-transform: uppercase;
+
 }
 
 /*SERVICES*/
 .services{
-	height: 550px;
+	
 }
 
 .services h1{
 	text-align: center;
 	font-size: 25px;	
-	font-weight: bold;
+	font-weight: bolder;
+	padding-top: 30px;
 }
 
-.services p{
+.services .col-md-3 h1{
+	padding-top: 10px;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.services .col-md-3 p{
+	color: #999;
+	text-align: center;
+}
+
+.services .row p{
 	height:70px;
+}
+
+.services #note{
+	padding-top: 50px;
+	padding-bottom: 10px;
+	color: #999;
+	font-size: 10px;
 }
 
 .services .row{
 
 }
 
+.services .row button{
+	width: 90%;
+	margin-top: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #C40000;
+	border:none;
+	color: white;
+}
+
 .services .col-md-3{
-	border-left:1px solid black;
+	margin-top: 20px;
+	border-left:1px solid #F0F0F0;
 	height: 400px;
 }
 #first{
@@ -210,8 +276,161 @@ body * {
 /*FOOTER*/
 .footer{
 	background-color: #F0F0F0;
-	height: 460px;
 }
+
+.footer .container{
+	padding-bottom: 50px;
+}
+
+.footer .row h2{
+	font-weight: 800;
+	font-size: 12px;
+}
+
+.footer .row .skyColor{
+	color: #00B3BE;
+}
+
+.footer .row .greyColor{
+	color: #666666;
+}
+
+.footer #destinations{
+	margin-top: 30px;
+}
+
+.footer .row .flights{
+	
+}
+
+.footer .row .flights p{
+	margin-top: 0px;
+	line-height: 5px;
+	color: #666;
+	font-size: 12px;
+}
+
+
+
+/*------------------OUR SERVICES---------------------*/
+
+/*AIRPORT*/
+
+.airport{
+	position: relative;
+	z-index: 1;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.airport h1{
+	font-size: 32px;
+	color: red;
+}
+
+.airport h2{
+	color:red;
+}
+
+.airport p{
+	color: #777;
+}
+
+/* CAR */
+
+.car{
+	background-color: #F6F6F6;
+}
+
+
+
+
+/*-------------------Programmes----------------------*/
+
+/* FARE */
+
+.fare h1, .vision h1{
+
+	color: red;
+	font-size: 35px;
+}
+
+.fare table{
+	width: 100%;
+	height:300px;
+
+}
+
+.fare table, td,th{
+	border: 2px solid #E6E6E6;
+}
+
+
+.fare .headTable{
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+}
+
+
+#first{
+	border:0px;
+}
+#promo{
+	background-color: #FF8811;
+}
+#basic{
+	background-color: #BB23A0;
+}
+#basic2{
+	background-color: #962399;
+}
+#smart{
+	background-color: #2986E8;
+}
+#flex{
+	background-color: #1100FF;
+}
+#youth{
+	background-color: #7FBA00;
+}
+
+.fare .conditions {
+	background-color: #E6E6E6;
+}
+
+.fare .greyBox{
+	background-color: #FAFAFA;
+	width: 9%
+}
+
+.fare td{
+	width: 5%;
+}
+
+
+
+/*-------------COMMITMENTS---------------*/
+
+/* VISION */
+
+.vision{
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.vision p{
+	color: #C40000;
+}
+
+
+/* ACTIONS */
+
+.actions{
+	padding-top: 80px;
+	background-color: #F6F6F6;
+	padding-bottom: 80px;
+}
+
 
 
 .carousel{

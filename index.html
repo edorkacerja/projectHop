@@ -32,10 +32,10 @@
 			<img id="logoAirFrance" class="pull-right" src="pictures/logoAirFrance.png" alt="airfrance"/>
 
 			<ul>
-				<li id="firstTab"><a href="index.html">plan and book</a></li>
-				<li><a href="ourServices.html">our services</a></li>
-				<li><a href="ourProgrammes.html">our loyalty programmes</a></li>
-				<li><a href="ourCommitments.html">our commitments</a></li>
+				<li class="tab1 activeTab"><a href="index.html">plan and book</a></li>
+				<li class="tab2"><a href="ourServices.html" >our services</a></li>
+				<li class="tab3"><a href="ourProgrammes.html" >our loyalty programmes</a></li>
+				<li class="tab4"><a href="ourCommitments.html" >our commitments</a></li>
 			
 			<li id="search" class="pull-right"><form>
 				<input type="text">
@@ -54,15 +54,17 @@
 						<div class="theBlock1">
 							<p>
 								<form action="">
-								<input type="radio" name="sex" >Roundtrip   
-								<input type="radio" name="sex" >One-way
+									<div class="row">
+										<div class="col-md-5 col-sm-5 col-xs-5"><input type="radio" name="sex" >Roundtrip  </div> 
+										<div class="col-md-6 col-sm-6 col-xs-6"><input type="radio" name="sex" >One-way</div>
+									</div>
 								</form>
 							</p>
 							<p><input type="text" name="wide" placeholder="From"></p>
 							<p><input type="text" name="wide" placeholder="To"></p>
 							<p><input type="text" name="departing" placeholder="Departing"> <input type="text" name="departing" placeholder="Returning"></p>
 							<p><input type="text" name="person" placeholder="1 Person"> <input type="text" name="adult" placeholder="Adult 25-64"></p>
-							<p class="bottom">Schedule Only <button class="blueButton pull-right">Hop!</button></p>
+							<p class="bottom">Schedule Only <button class="blueButton pull-right">HOP!</button></p>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-4 col-xs-4 button2">
@@ -90,15 +92,14 @@
 							<p><input type="text" name="wide" placeholder="Lastname"></p>
 							<p>Form of identification</p>
 							<p>
-								<select name="cars">
-								  <option value="volvo">Volvo</option>
-								  <option value="saab">Saab</option>
-								  <option value="fiat">Fiat</option>
-								  <option value="audi">Audi</option>
+								<select name="cars" width="100%">
+								  <option value="booking">Booking reference</option>
+								  <option value="electronic">Electronic ticket</option>
+								  <option value="flyer">Frequent Flyer Number</option>
 								</select>
 							</p>
-							<p><input type="text"> <input type="text"></p>
-							<h1>jaolsdfijasdfsda</h1>
+							<p><input type="text" name="wide" placeholder="ex:A1RB2C"> </p>
+							<p class="bottom">. <button class="blueButton pull-right">AND HOP</button></p>
 						</div>
 					</div>
 				</div>
@@ -119,7 +120,7 @@
 
 				<div class="carousel-inner" role="listbox">
 			      <div class="item active">
-			        <img src="pictures/hopNantes.jpg" alt="Nantes" width="360" height="245">
+			        <img src="pictures/hopLyon.jpg" alt="Nantes" width="360" height="245">
 			      </div>
 
 			      <div class="item">
@@ -131,7 +132,7 @@
 			      </div>
 
 			      <div class="item">
-			        <img src="pictures/hopLyon.jpg" alt="Lyon" width="460" height="245">
+			        <img src="pictures/hopNantes.jpg" alt="Lyon" width="460" height="245">
 			      </div>
 			    </div>
 
@@ -146,9 +147,9 @@
 			<div class="includedInPrice">
 				<h1>Always included, regardless of your fare class</h1>
 				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4">Snack</div>
-					<div class="col-md-4 col-sm-4 col-xs-4">Hand Luggage</div>
-					<div class="col-md-4 col-sm-4 col-xs-4">Choice of seat</div>
+					<div class="col-md-4 col-sm-4 col-xs-4"> <img src="pictures/icon/snack1.png" alt=""> Snack</div>
+					<div class="col-md-4 col-sm-4 col-xs-4"><img src="pictures/icon/luggage.png" alt=""> Hand Luggage</div>
+					<div class="col-md-4 col-sm-4 col-xs-4"> <img src="pictures/icon/seat.png" alt=""> Choice of seat</div>
 				</div>
 			</div>
 		</div>
@@ -158,34 +159,138 @@
 		<div class="container">
 			<h1>Our selection of services</h1>
 			<div class="row">
-				<div class="col-md-3 col-sm-3 col-xs-3" id="first"> <h1>car rental</h1>
+				<div class="col-md-3 col-sm-3 col-xs-3" id="first"> 
+					<h1>car rental</h1>
 					<p>5 lsdjf asdfl asdf nkjasdf saefl nasjkdf lisef nkjsdf lij </p>
-					<img src="pictures/car.jpg" alt="car">
+					<img src="pictures/slider/car.jpg" alt="car">
+					<button>SELECT YOUR CAR</button>
 				</div>
-				<div class="col-md-3 col-sm-3 col-xs-3"><h1>819 000 hotels</h1> <p>Book asldif asdlf nkjsdf asldfi sdnfj sdf</p>
-				<img src="pictures/window.jpg" alt="window"></div>
-				<div class="col-md-3 col-sm-3 col-xs-3"> <h1>airport parking</h1> <p>lisjdfil asldif asndfl isndf njkasdf insdf linsdf njksdf njkasdf insedf asdf njksdf nkjsdf njksdf </p><img src="pictures/plane.jpg" alt="plane"></div>
-				<div class="col-md-3 col-sm-3 col-xs-3"><h1>low-priced driver</h1> <p>lasdf nsadf lijnsdf sdf n jksdf sd fkjnjksd fsdf jnknjksd njk d fkjsn d kjsds j jksdf jksdf njksdf nkjsd </p><img src="pictures/couple.jpg" alt="couple"></div>
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<h1>819 000 hotels</h1> 
+					<p>Book asldif asdlf nkjsdf asldfi sdnfj sdf</p>
+					<img src="pictures/slider/window.png" alt="window">
+					<button>FIND ACCOMODATION</button>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"> 
+					<h1>airport parking</h1> 
+					<p>lisjdfil asldif asndfl isndf njkasdf insdf linsdf njksdf njkasdf insedf asdf njksdf nkjsdf njksdf </p>
+					<img src="pictures/slider/parking.png" alt="plane">
+					<button>SAVE YOUR SPOT</button>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-3"><h1>low-priced driver</h1> <p>lasdf nsadf lijnsdf sdf n jksdf sd fkjnjksd fsdf jnknjksd njk d fkjsn d kjsds j jksdf jksdf njksdf nkjsd </p><img src="pictures/slider/couple.jpg" alt="couple">
+				<button>CHOOSE THIS SERVICE</button></div>
 			</div>
+			<p id="note">* Soumis à conditions et à disponibilités. Frais de services de 1€ inclus</p>
+
 		</div>
 	</div>
 
 		<div class="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4 col-sm-4 col-xs-4"> NEWSLETTER</div>
-					<div class="col-md-4 col-sm-4 col-xs-4">FOLLOW US</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">BOOKING</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">INTERNET ASSISTANCE</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<h2>NEWSLETTER</h2>
+						<input type="text" placeHolder="Email">
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-4">
+						<h2>FOLLOW US</h2>
+						<p> <img src="pictures/icon/facebook.png" alt="">
+							<img src="pictures/icon/twitter.png" alt="">
+							<img src="pictures/icon/youtube.png" alt="">
+						</p>
+
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<h2 class="skyColor">BOOKING</h2>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<h2 class="skyColor">INTERNET ASSISTANCE</h2>
+					</div>
+				</div>
+
+				<div class="row" id="destinations">
+					<div class="col-md-6 col-sm-6 col-xs-6"> <h2 class="greyColor"> FRANCE DESTINATIONS</h2></div>
+					<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> EUROPE DESTINATIONS</h2></div>
+					<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> HOP MOBILE THE COMPANY</h2></div>
+					<div class="col-md-2 col-sm-2 col-xs-2"> <h2 class="greyColor"> LEGAL</h2></div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-2 col-sm-2 col-xs-2">Agen flights</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">La Rochelle flights</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Paris</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Amsterdam</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">About us</div>
-					<div class="col-md-2 col-sm-2 col-xs-2">Conditions of carriage</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>Agen flights</p>
+						<p>Ajaccio flights</p>
+						<p>Aurillac flights</p>
+						<p>Bastia flights</p>
+						<p>Biarritz flights</p>
+						<p>Bordeaux flights</p>
+						<p>Brest flights</p>
+						<p>Brive flights</p>
+						<p>Caen flights</p>
+						<p>Calvi flights</p>
+						<p>Castres flights</p>
+						<p>Clermont Fd flights</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>La Rochelle flights</p>
+						<p>Lannion flights</p>
+						<p>Lille flights</p>
+						<p>Lorient flights</p>
+						<p>Lourdes-Tarbes flights</p>
+						<p>Lyon flights</p>
+						<p>Marseille flights</p>
+						<p>Metz-Nancy flights</p>
+						<p>Montpellier flights</p>
+						<p>Mulhouse-Basel flights</p>
+						<p>Nantes flights</p>
+						<p>Nice flights</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>Paris flights</p>
+						<p>Pau flights</p>
+						<p>Perpignan flights</p>
+						<p>Poitiers flights</p>
+						<p>Quimper flights</p>
+						<p>Rennes flights</p>
+						<p>Rodez flights</p>
+						<p>Strasbourg flights</p>
+						<p>Toulouse flights</p>
+						<p>Toulon flights</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>Amsterdam flights</p>
+						<p>Bologna flights</p>
+						<p>Brussels flights</p>
+						<p>Düsseldorf flights</p>
+						<p>Florence flights</p>
+						<p>Geneva flights</p>
+						<p>Gothenburg flights</p>
+						<p>Luxembourg flights</p>
+						<p>Milan flights</p>
+						<p>Prague flights</p>
+						<p>Rome flights</p>
+						<p>Venice flights</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>About us</p>
+						<p>Corporate Governance</p>
+						<p>Fleet</p>
+						<p>Flight safety</p>
+						<p>Maintenance</p>
+						<p>Press</p>
+						<p>Training</p>
+						<h2 class="greyColor">CONTACT</h2>
+						<p>Contact</p>
+						<p>FAQ</p>
+						<p>Join us</p>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 flights">
+						<p>Conditions of carriage</p>
+						<p>General Conditions of Sales</p>
+						<p>Managing Cookies</p>
+						<p>European notice</p>
+						<p>Legal notice</p>
+						<p>Credits</p>
+					</div>
 				</div>
 				
 			</div>
